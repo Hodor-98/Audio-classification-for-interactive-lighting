@@ -18,3 +18,8 @@ y, sr = librosa.load('UrbanSound8K/audio/fold5/6508-9-0-1.wav', duration=2.97)
 ps = librosa.feature.melspectrogram(y=y, sr=sr)
 librosa.display.specshow(ps, y_axis='mel', x_axis='time')
 plt.show()
+
+y, sr = librosa.load('UrbanSound8K/audio/fold5/43787-3-0-0.wav', duration=2.97)
+ps = librosa.feature.melspectrogram(y=y, sr=sr)
+librosa.display.specshow(ps, y_axis='mel', x_axis='time')
+plt.show()
